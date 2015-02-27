@@ -20,6 +20,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAs-n9-PFG">
                                 <rect key="frame" x="0.0" y="-8" width="600" height="608"/>
                                 <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="This is the hidden text field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WNT-vq-BdR">
+                                        <rect key="frame" x="8" y="570" width="584" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="This is the text field that is not hidden" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WIi-Kq-KUT">
                                         <rect key="frame" x="8" y="99" width="584" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -35,11 +40,18 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="This is the hidden text field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WNT-vq-BdR">
-                                        <rect key="frame" x="8" y="570" width="584" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
-                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These fields aren't hidden by Keyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qla-HP-lm7">
+                                        <rect key="frame" x="8" y="70" width="300" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hidden when the keyboard is displayed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeC-AF-8fs">
+                                        <rect key="frame" x="8" y="503" width="302" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="WIi-Kq-KUT" firstAttribute="trailing" secondItem="VAs-n9-PFG" secondAttribute="trailingMargin" id="4vx-js-xPp"/>
@@ -48,13 +60,17 @@
                                     <constraint firstItem="WNT-vq-BdR" firstAttribute="leading" secondItem="WIi-Kq-KUT" secondAttribute="leading" id="8fV-nX-7Wb"/>
                                     <constraint firstItem="MtI-rb-j6u" firstAttribute="leading" secondItem="nEO-4c-3Ew" secondAttribute="leading" id="BGk-Rh-zhi"/>
                                     <constraint firstItem="WNT-vq-BdR" firstAttribute="top" secondItem="nEO-4c-3Ew" secondAttribute="bottom" constant="8" symbolic="YES" id="DDg-4J-Tuz"/>
+                                    <constraint firstItem="WIi-Kq-KUT" firstAttribute="top" secondItem="qla-HP-lm7" secondAttribute="bottom" constant="8" symbolic="YES" id="FOO-3C-1kG"/>
+                                    <constraint firstItem="qla-HP-lm7" firstAttribute="leading" secondItem="xeC-AF-8fs" secondAttribute="leading" id="Li3-ES-TvG"/>
                                     <constraint firstAttribute="bottom" secondItem="WIi-Kq-KUT" secondAttribute="bottom" constant="479" id="Ttx-dR-pfV"/>
                                     <constraint firstItem="WNT-vq-BdR" firstAttribute="bottom" secondItem="VAs-n9-PFG" secondAttribute="bottomMargin" id="UDs-Yc-zyT"/>
                                     <constraint firstItem="WIi-Kq-KUT" firstAttribute="centerX" secondItem="VAs-n9-PFG" secondAttribute="centerX" id="YnS-3s-UhD"/>
                                     <constraint firstItem="WNT-vq-BdR" firstAttribute="trailing" secondItem="WIi-Kq-KUT" secondAttribute="trailing" id="aMw-bB-fgt"/>
                                     <constraint firstItem="WIi-Kq-KUT" firstAttribute="leading" secondItem="VAs-n9-PFG" secondAttribute="leadingMargin" id="cfS-jP-it2"/>
                                     <constraint firstItem="WIi-Kq-KUT" firstAttribute="top" secondItem="VAs-n9-PFG" secondAttribute="top" constant="99" id="eqw-CV-2gm"/>
+                                    <constraint firstItem="nEO-4c-3Ew" firstAttribute="top" secondItem="xeC-AF-8fs" secondAttribute="bottom" constant="8" symbolic="YES" id="fbs-wW-Bg7"/>
                                     <constraint firstItem="MtI-rb-j6u" firstAttribute="leading" secondItem="WIi-Kq-KUT" secondAttribute="leading" id="owq-uC-IfT"/>
+                                    <constraint firstItem="qla-HP-lm7" firstAttribute="leading" secondItem="WIi-Kq-KUT" secondAttribute="leading" id="uAr-LO-NYf"/>
                                     <constraint firstItem="MtI-rb-j6u" firstAttribute="trailing" secondItem="nEO-4c-3Ew" secondAttribute="trailing" id="wrF-dB-8LP"/>
                                 </constraints>
                             </scrollView>
